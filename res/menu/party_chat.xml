@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.insitehub.saleready_android.PartyChatActivity" >
+
+    <item android:id="@+id/video" android:title="@string/video_on_off_menu" android:icon="@drawable/btn_video_orange" android:showAsAction="ifRoom"></item>
+	<item android:id="@+id/audio" android:title="@string/audio_on_off_menu" android:icon="@drawable/btn_audio_orange" android:showAsAction="ifRoom"></item>
+    <item android:id="@+id/message" android:title="@string/messagebubble_menu" android:icon="@drawable/messagebubble" android:showAsAction="always"></item>
+    <item android:id="@+id/document" android:title="@string/action_share_document" android:icon="@drawable/btn_share_document" android:showAsAction="always"></item>
+</menu>

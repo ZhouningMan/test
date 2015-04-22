@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="orange">#F36F36</color>
+    <color name="orange_selected">#F79F79</color>
+	<color name="selector">#55FFFFFF</color>
+    <color name="grey">#DDDDDD</color>
+    <color name="white">#FFFFFF</color>
+    <color name ="black">#000000</color>
+    <color name="blue">#3C9AD5</color>
+    <color name="transparent">#00000000</color>
+    <color name="login_field">#D0D0D0</color>
+    
+    <color name="debug">#00FF00</color>
+    
+    <!--oldGrey= #6B7478-->
+    <!--oldOrange= #F6882E-->
+
+</resources>

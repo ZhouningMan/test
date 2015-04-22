@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative_layout"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/performance_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="75dp"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:onClick="navigate"
+            android:src="@drawable/btnperformance" />
+
+        <ImageView
+            android:id="@+id/coaching_corner_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:onClick="navigate"
+            android:src="@drawable/btncoachescorner" />
+
+        <TextView
+            android:id="@+id/coaching_corner_text"
+            style="@style/MainActivityTextStyle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coaching_corner_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/coaching_corner_text" />
+
+        <ImageView
+            android:id="@+id/certification_center_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/coaching_corner_button"
+            android:layout_marginRight="225dp"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:onClick="navigate"
+            android:src="@drawable/btncertificationcenter" />
+
+        <ImageView
+            android:id="@+id/group_chat_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/certification_center_button"
+            android:layout_alignTop="@+id/performance_button"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:onClick="navigate"
+            android:src="@drawable/btngroupchat" />
+
+        <ImageView
+            android:id="@+id/pitch_practice_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/coaching_corner_button"
+            android:layout_marginLeft="225dp"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:onClick="navigate"
+            android:src="@drawable/btnpitchpractice" />
+
+        <ImageView
+            android:id="@+id/knowledge_center_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/pitch_practice_button"
+            android:layout_alignTop="@+id/performance_button"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:onClick="navigate"
+            android:src="@drawable/btnknowledgecenter" />
+
+        <TextView
+            android:id="@+id/performance_text"
+            style="@style/MainActivityTextStyle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/performance_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-65dp"
+            android:text="@string/performance_text" />
+
+        <TextView
+            android:id="@+id/group_chat_text"
+            style="@style/MainActivityTextStyle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/performance_text"
+            android:layout_alignLeft="@id/group_chat_button"
+            android:layout_alignRight="@id/group_chat_button"
+            android:text="@string/group_chat_text" />
+
+        <TextView
+            android:id="@+id/knowledge_center_text"
+            style="@style/MainActivityTextStyle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/performance_text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="205dp"
+            android:text="@string/knowledge_center_text" />
+
+        <TextView
+            android:id="@+id/pitch_practice_text"
+            style="@style/MainActivityTextStyle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/coaching_corner_text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="225dp"
+            android:text="@string/pitch_practice_text" />
+
+        <TextView
+            android:id="@+id/certification_center_text"
+            style="@style/MainActivityTextStyle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/coaching_corner_text"
+            android:layout_alignBottom="@+id/coaching_corner_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="195dp"
+            android:text="@string/certification_center_text" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_weight="0"
+        android:src="@color/orange" />
+
+</LinearLayout>

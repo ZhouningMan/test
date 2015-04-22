@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/coaching_corner_text"
+            style="@style/MainActivityTextStyle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/pitch_practice_text"
+            android:layout_marginRight="68dp"
+            android:text="@string/coaching_corner_text_2" />
+
+        <TextView
+            android:id="@+id/group_chat_text"
+            style="@style/MainActivityTextStyle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="65dp"
+            android:layout_marginLeft="63dp"
+            android:text="@string/group_chat_text_2" />
+
+        <TextView
+            android:id="@+id/knowledge_center_text"
+            style="@style/MainActivityTextStyle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/group_chat_text"
+            android:layout_marginRight="60dp"
+            android:text="@string/knowledge_center_text_2" />
+
+        <ImageView
+            android:id="@+id/pitch_practice_button"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="85dp"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:onClick="navigate"
+            android:src="@drawable/btnpitchpractice" />
+
+        <ImageView
+            android:id="@+id/coaching_corner_button"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/pitch_practice_button"
+            android:layout_marginRight="60dp"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:onClick="navigate"
+            android:src="@drawable/btncoachescorner" />
+
+        <ImageView
+            android:id="@+id/group_chat_button"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_alignLeft="@+id/pitch_practice_button"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="110dp"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:onClick="navigate"
+            android:src="@drawable/btngroupchat" />
+
+        <ImageView
+            android:id="@+id/knowledge_center_button"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_alignLeft="@+id/coaching_corner_button"
+            android:layout_alignTop="@+id/group_chat_button"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:onClick="navigate"
+            android:src="@drawable/btnknowledgecenter" />
+
+        <TextView
+            android:id="@+id/pitch_practice_text"
+            style="@style/MainActivityTextStyle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="185dp"
+            android:text="@string/pitch_practice_text_2" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_weight="0"
+        android:src="@color/orange" />
+
+</LinearLayout>

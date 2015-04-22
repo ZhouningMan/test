@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/knowledge_center_main_wrapper"
+    tools:context="com.insitehub.saleready_android.KnowledgeCenterActivity" >
+
+    <GridView
+        android:id="@+id/gridview_assigned_asset"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:numColumns="2"
+        android:text="@string/hello_world" />
+
+    <ImageView
+        android:id="@+id/approved_materials_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/coaching_forms_button"
+        android:layout_marginLeft="250dp"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:onClick="navigate"
+        android:src="@drawable/btn_selling_skills" />
+
+    <TextView
+        android:id="@+id/approved_materials_text"
+        style="@style/MainActivityTextStyle7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/coaching_forms_text"
+        android:layout_marginLeft="225dp"
+        android:text="@string/approved_materials" />
+
+    <ImageView
+        android:id="@+id/coaching_forms_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginBottom="95dp"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:onClick="navigate"
+        android:src="@drawable/btn_product_information" />
+
+    <TextView
+        android:id="@+id/coaching_forms_text"
+        style="@style/MainActivityTextStyle7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:text="@string/coaching_forms" />
+
+    <ImageView
+        android:id="@+id/library_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/coaching_forms_button"
+        android:layout_marginRight="250dp"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:onClick="navigate"
+        android:src="@drawable/btn_market_knowledge" />
+
+    <TextView
+        android:id="@+id/library_text"
+        style="@style/MainActivityTextStyle7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/coaching_forms_text"
+        android:layout_marginRight="265dp"
+        android:text="@string/library" />
+
+    <ImageView
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:src="@color/orange" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.saleready_android.MainActivity" >
+
+    <item
+        android:id="@+id/action_scheduling"
+        android:icon="@drawable/calendar"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_scheduling"
+        android:visible="true">
+    </item>
+    
+    <item
+        android:id="@+id/messaging"
+        android:icon="@drawable/messagebubble"
+        android:showAsAction="ifRoom"
+        android:title="@string/messaging"
+        android:visible="true">
+    </item>
+    <item
+        android:id="@+id/logout"
+        android:onClick="logoutFromActionBar"
+        android:showAsAction="ifRoom"
+        android:title="@string/logout"
+        android:visible="true">
+    </item>
+
+</menu>

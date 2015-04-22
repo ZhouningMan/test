@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="3"
+    android:windowSoftInputMode="stateHidden|adjustResize"
+    tools:context="com.insitehub.saleready_android.MainActivityMessagesActivity" >
+
+    <ListView
+        android:id="@+id/listview_contacts"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:choiceMode="singleChoice" >
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2" >
+
+        <ListView
+            android:id="@+id/listview_chat_messages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/send_chat_message_layout"
+            android:choiceMode="none" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/send_chat_message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <EditText
+                android:id="@+id/chatMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/sendMessage"
+                android:layout_toStartOf="@+id/sendMessage"
+                android:ems="10"
+                android:hint="@string/hint"
+                android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+                android:nextFocusLeft="@id/chatMessage"
+                android:nextFocusUp="@id/chatMessage" >
+            </EditText>
+
+            <Button
+                android:id="@+id/sendMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@color/orange"
+                android:layout_alignParentRight="true"
+                android:text="@string/send" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

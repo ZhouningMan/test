@@ -1,0 +1,78 @@
+UI DESIGN TODO
+
+* implies we can't work on it right now
+
+ActionBar
+	-Dropdown should be white with a orange (grey?) select
+	-Can we get a drop shadow like in the top on the bottom?
+
+Login Screen
+	-Make Frank the default user on all orientations and screen sizes
+	-Increase responsiveness, there's a delay on the animation when the login button is pressed (not important right now)
+	
+Main Screen
+	-*Icons need new Orange
+	-*Calendar icon looks really bad
+	-*Decide if the text looks good enough (spacing & design)
+	
+Messages Activity
+	-Change holo blue to orange
+	-Better user spacing
+	-General redesign
+	-Close/back button
+	-spinner on load
+	
+View Reps
+	-Design overhaul
+	-Implement 2 column on 10L layout
+
+Incall Activity
+	-Make the local screen a little larger, and have it flush with the corners
+	-bottom orange bar
+	
+Assets Activty Redesign
+	-Change Holo blue to orange
+	-Better spacing
+	-Better text sizes
+	-Working rating system (backend support might be harder)
+	-Share button redesign
+	-Close button
+	
+Incall Form
+	-Holo blue to orange
+	-Better form building (closely related to the build form method)
+	-back/close button
+	-floating save button, not a cutoff
+	
+Coaching Corner
+	-User scrollview needs better spacing
+	-Forms built don't look too good
+	-Floating Save button if possible, should have white text
+	
+Knowledge Center
+	-Add Tinters to the imageviews that act as buttons.
+	-Put Buttons in the menubar for the phone version maybe?
+	
+Saved Forms Activity
+	-Better User Scrollview
+	-Grey text is unreadable
+	-Items need to be spaced better
+	-Need a spinner on an item selection
+	
+Performance Reporting
+	-Title text should be white not black
+	-Better user slider, maybe put it on the right for consistency.
+	-Don't let NaN show up.
+	
+Group Chat
+	-Larger local screen
+	
+
+NOTES:
+	local screen sizes for incall might be scaled to look good on linfeng's tablet
+	form generation really needs to be worked on
+
+
+	
+	
+	

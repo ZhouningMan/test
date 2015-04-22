@@ -1,0 +1,37 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/orange</item>
+        <item name="android:titleTextStyle">@style/ActionBarTextStyle</item>
+    </style>
+
+    <style name="ActionBarOverflowStyle" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel</item>	
+    </style>
+
+    <style name="ActionBarTextStyle" parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MainActivityTextStyle10" parent="@android:style/TextAppearance.DeviceDefault.Large">
+
+        <!-- TODO Reformat text style, with Gil Sans, new grey -->
+        <item name="android:gravity">center</item>
+        <item name="android:color">@color/grey</item>
+    </style>
+
+    <style name="MainActivityTextStyle7" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+
+        <!-- TODO Reformat text style, with Gil Sans, new grey -->
+        <item name="android:gravity">center</item>
+        <item name="android:color">@color/grey</item>
+    </style>
+
+    <style name="FormSectionTitle" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="FormQuestion" parent="@android:style/TextAppearance.Medium"></style>
+
+</resources>

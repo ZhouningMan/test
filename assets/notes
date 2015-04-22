@@ -1,0 +1,64 @@
+Login = LoginVC
+
+
+
+Home Screen = PathMenuVC
+
+Buttons on Home Screen:
+
+pitch practice -> ViewRepsVC -> InCallVC or CoachingFormVC
+
+
+coaches corner -> CoachingCornerVC
+
+performance reporting -> PerformanceReportingVC
+
+
+
+Certification Center -> ViewRepsVC -> CoachingFormVC
+
+
+group chat -> PartyChatVC
+
+
+knowledge center -> KnowledgeCenterVC -> LibraryVC or SaveFormsVC
+
+Notes:
+Incall.m
+ShareDocument --> loadlibraryassets --> click share button  -->openAssest(), timer check,  tmrCheckForSharedAssetsFire, if the other party opens the same document
+--> scrollViewidEndDecerl , then the other device, sockethandler....
+
+related methods:
+
+
+
+socketO.m
+pre-scolling
+establish scocket(sockethandler), receiver socket: json dict, 
+
+when scoll:
+scrollviewdidenddecelerating(incall.m)  --> sendscrollcoorsx, send to the socket --> socket send the event  
+
+receiving side:
+socketio calls sockethandlerdidreceive  
+
+
+Coachingcorner:
+	Form.m
+	click save button:
+		save is called
+	when an rep open the coaching corner 
+		 viewdidload, precoachingform loadform Repfor
+
+
+	incall:
+		inCallVc.m  
+		btnCoachingFormCliked
+			loadform(assessment)
+		same thing for certification
+	hereforcertification
+	
+     
+     loadlibraryassets inCall.m
+
+

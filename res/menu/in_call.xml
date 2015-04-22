@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.insitehub.saleready_android.InCallActivity" >
+
+    <item
+        android:id="@+id/turn_video_on_off"
+        android:icon="@drawable/btn_video_orange"
+        android:showAsAction="ifRoom"
+        android:title="@string/video_on_off_menu"/>
+    <item
+        android:id="@+id/turn_audio_on_off"
+        android:icon="@drawable/btn_audio_orange"
+        android:showAsAction="ifRoom"
+        android:title="@string/audio_on_off_menu"/>
+    <item
+        android:id="@+id/message"
+        android:icon="@drawable/messagebubble"
+        android:showAsAction="always"
+        android:title="@string/messagebubble_menu">
+    </item>
+    <item
+        android:id="@+id/btnShareDocument"
+        android:icon="@drawable/btn_share_document"
+        android:showAsAction="ifRoom"
+        android:title="@string/shared_document"/>
+    <item
+        android:id="@+id/btnAction"
+        android:icon="@drawable/btn_action"
+        android:showAsAction="ifRoom"
+        android:title="@string/Certification"/>
+
+</menu>

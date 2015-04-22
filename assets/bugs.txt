@@ -1,0 +1,11 @@
+ParseIntialization error! 
+Exit party chat, but the stream is not stopped, still publishing
+In ViewReps, if the user cancels the call, new calls will not be triggered -- fixed
+PartyChat participateGroupChat() will break the app after resume.
+Username is not unique identifier for messaging.   
+disable all the menus during initialization process
+
+Receive multiple copies of same chat message in P2P chat
+
+
+1.Click the icon, should go to the previous working activity

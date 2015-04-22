@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.insitehub.saleready_android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.insitehub.saleready_android.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="com.insitehub.saleready_android.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name="com.insitehub.saleready_android.App"
+        android:allowBackup="true"
+        android:icon="@drawable/connecthublogo"
+        android:label="@string/app_name"
+        android:logo="@drawable/connecthublogo"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Login" >
+            <intent-filter android:label="@string/app_name" >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label=""
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.insitehub.saleready_android.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".CoachingCornerActivity"
+            android:label="@string/title_activity_coaching_corner"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.insitehub.saleready_android.MainActivity" />
+        </activity>
+        <activity
+            android:name=".InCallActivity"
+            android:label="@string/title_activity_in_call">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewReps"
+            android:label="@string/title_activity_view_reps"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.insitehub.saleready_android.MainActivity" />
+        </activity>
+
+        <receiver
+            android:name=".InComingCallReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.insitehub.saleready_android.PartyChatActivity"
+            android:label="@string/title_activity_party_chat"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.insitehub.saleready_android.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AssetsActivity"
+            android:label="@string/title_activity_assets"
+            android:parentActivityName=".InCallActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.insitehub.saleready_android.InCallActivity" />
+        </activity>
+        <activity
+            android:name=".AssetViewerActivity"
+            android:label="@string/title_activity_pdfeditor"
+            android:parentActivityName=".AssetsActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.insitehub.saleready_android.AssetsActivity" />
+        </activity>
+        <activity
+            android:name=".KnowledgeCenterActivity"
+            android:label="@string/title_activity_knowledge_center"
+            android:parentActivityName=".MainActivity"> 
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.insitehub.saleready_android.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SavedFormsActivity"
+            android:label="@string/title_activity_saved_forms"
+            android:parentActivityName=".KnowledgeCenterActivity"> 
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.insitehub.saleready_android.KnowledgeCenterActivity" />
+        </activity>
+        <activity
+            android:name=".SavedFormViewerActivity"
+            android:label="@string/title_activity_saved_form_viewer"
+            android:parentActivityName=".SavedFormsActivity"> 
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.insitehub.saleready_android.SavedFormsActivity" />
+        </activity>
+        <activity
+            android:name=".PerformanceReportingActivity"
+            android:label="@string/title_activity_performance_reporting"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.insitehub.saleready_android.MainActivity" />
+        </activity>
+        <activity
+            android:name=".IncallFormActivity"
+            android:label="@string/title_activity_incall_form"
+            android:parentActivityName=".InCallActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"> 
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.insitehub.saleready_android.InCallActivity" />
+        </activity>
+        <activity
+            android:name="com.insitehub.saleready_android.MainActivityMessagesActivity"
+            android:label="@string/title_activity_messages"
+            android:parentActivityName=".MainActivity"> 
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.insitehub.saleready_android.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".Messaging.MessagingActivity"
+            android:label="@string/title_activity_messages"
+            android:theme="@android:style/Theme.Holo.Light.Dialog">
+        </activity>
+       
+    </application>
+
+</manifest>
